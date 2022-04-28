@@ -1,0 +1,14 @@
+html {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  background: linear-gradient(180deg, #09214F 99.99%, rgba(58, 128, 216, 0) 100%);
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 11rem 9rem 11rem;
+  gap: 1rem;
+}

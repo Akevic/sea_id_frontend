@@ -1,0 +1,25 @@
+.camera_wrapper {
+  position: relative;
+  height: 100%;
+
+  .camera_ring {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    left: 0;
+    height: 50%;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+
+  .camera_controls {
+    display: flex;
+    justify-content: space-around;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+}

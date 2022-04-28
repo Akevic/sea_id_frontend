@@ -1,0 +1,40 @@
+.card {
+  position: relative;
+  width: 11rem;
+  height: 16rem;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+
+  // &::after {
+  //   content: "";
+  //   position:absolute;
+  //   margin:-20px;
+  //   width:40px;
+  //   height:40px;
+  //   border-radius: 50%; /* NEW */
+  //   box-shadow: 0 0 0 250px #522d5b;
+  // }
+
+  &_1 {
+    border-radius: 80px 20px 20px 20px;
+    grid-column: 1 / span 2;
+  }
+
+  &_2 {
+    border-radius: 20px 80px 20px 20px;
+    grid-column: 3;
+  }
+
+  &_3 {
+    border-radius: 20px 20px 20px 80px;
+    grid-column: span 2;
+    grid-row: 3;
+  }
+
+  &_4 {
+    border-radius: 20px 20px 80px 20px;
+    grid-row: 3;
+  }
+}
