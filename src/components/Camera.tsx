@@ -2,8 +2,8 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import { useRef } from 'react'
 import { Camera, CameraType } from 'react-camera-pro'
-import { useDispatch } from 'react-redux'
-import { imageActions } from '../store/store'
+// import { useDispatch } from 'react-redux'
+// import { imageActions } from '../store/store'
 import { useNavigate } from 'react-router-dom'
 // import Clarifai from 'clarifai'
 import camera2 from '../assets/camera2.png'
@@ -39,7 +39,7 @@ import info from '../assets/info.png'
 
 export const Component = () => {
   const navigate = useNavigate()
-  const dispatch = useDispatch()
+  // const dispatch = useDispatch()
   const camera = useRef<CameraType>()
   // const request = new service.PostModelOutputsRequest()
   // request.setModelId('416d516bce854c04bc6383d62018aadd')
@@ -136,10 +136,10 @@ export const Component = () => {
   // }
 
   const takeImage = () => {
-    dispatch(imageActions.addImage({
-      url: camera.current?.takePhoto(),
-      name: ''
-    }))
+    // dispatch(imageActions.addImage({
+    //   url: camera.current?.takePhoto(),
+    //   name: ''
+    // }))
     navigate('/profile')
   }
 
