@@ -140,9 +140,7 @@ export const Component = () => {
     //   url: camera.current?.takePhoto(),
     //   name: ''
     // }))
-    setTimeout(() => {
-      navigate('/profile')
-    }, 1000)
+    navigate('/profile')
   }
 
   return (
