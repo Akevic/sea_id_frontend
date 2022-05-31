@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { Card, CardProps } from './components/Card'
 import { CameraBtn } from './components/CameraBtn'
 import SeaHut from './assets/seaHut.png'
+import home from './assets/home.png'
 
 export const App = () => {
   const navigate = useNavigate()
@@ -31,10 +32,11 @@ export const App = () => {
 
   return (
     <div className="app">
-      {cardPropsArray?.map(item => (
+      <img onClick={ activateCamera } src={ home } alt='home screen' />
+      {/* {cardPropsArray?.map(item => (
         <Card title={ item.title } imageUrl={ item.imageUrl } id={ item.id } />
       ))}
-      <CameraBtn handleClick={ activateCamera } />
+      <CameraBtn handleClick={ activateCamera } /> */}
     </div>
   )
 }

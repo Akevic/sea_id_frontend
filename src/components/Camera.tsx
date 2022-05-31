@@ -4,6 +4,7 @@ import { useRef } from 'react'
 import { Camera, CameraType } from 'react-camera-pro'
 import { useDispatch } from 'react-redux'
 import { imageActions } from '../store/store'
+import { useNavigate } from 'react-router-dom'
 // import Clarifai from 'clarifai'
 import camera2 from '../assets/camera2.png'
 import images from '../assets/images.png'
@@ -37,6 +38,7 @@ import info from '../assets/info.png'
 // metadata.set("authorization", "Key 0416a2bad12d45e39da79d38ea4be083")
 
 export const Component = () => {
+  const navigate = useNavigate()
   const dispatch = useDispatch()
   const camera = useRef<CameraType>()
   // const request = new service.PostModelOutputsRequest()
@@ -134,10 +136,11 @@ export const Component = () => {
   // }
 
   const takeImage = () => {
-    dispatch(imageActions.addImage({
-      url: camera.current?.takePhoto(),
-      name: ''
-    }))
+    // dispatch(imageActions.addImage({
+    //   url: camera.current?.takePhoto(),
+    //   name: ''
+    // }))
+    navigate('/profile')
   }
 
   return (

@@ -8,7 +8,12 @@ html {
 }
 
 .app {
-  display: grid;
-  grid-template-columns: 11rem 9rem 11rem;
-  gap: 1rem;
+  // display: grid;
+  // grid-template-columns: 11rem 9rem 11rem;
+  // gap: 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }

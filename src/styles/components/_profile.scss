@@ -1,0 +1,114 @@
+.fish_profile {
+  height: 100%;
+  background: linear-gradient(180deg, #09214F 99.99%, rgba(58, 128, 216, 0) 100%);
+  color: white;
+
+  .fish_profile_header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    
+    h1 {
+      font-size: 24px;
+    }
+    
+    .fish_name {
+      font-weight: bold;
+    }
+
+    .fish_name_latin {
+      font-style: italic;
+    }
+  }
+
+  .fish_profile_buttons {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: .3rem;
+    background-color: white;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 100px;
+
+    .btn {
+      color: black;
+      border-radius: 100px;
+      padding: .5rem 1rem;
+
+      &:active {
+        background: linear-gradient(180deg, #09214F 99.99%, rgba(58, 128, 216, 0) 100%);
+        color: white;
+      }
+
+      &:focus {
+        background: linear-gradient(180deg, #09214F 99.99%, rgba(58, 128, 216, 0) 100%);
+        color: white;
+      }
+    }
+
+    .profile_btn {
+      padding: .5rem 1rem;
+    }
+  }
+
+  .fish_profile_information {
+    margin-top: 1.5rem;
+    padding: 1rem;
+
+    .characterisics {
+      margin-bottom: .8rem;
+    }
+
+    .season_info {
+      margin-bottom: 1rem;
+    }
+
+    .food_heading {
+      margin-bottom: .8rem;
+    }
+  }
+
+  .profile_regulation {
+    padding: 1rem;
+
+    .season_banner {
+      background-color: #3BB656;
+      border-radius: 10px;
+      text-align: center;
+      padding: .5rem 1rem;
+      width: 60%;
+      margin: 0 auto;
+      
+      h2 {
+        &:nth-of-type(1) {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .regulation_boxes {
+      margin-top: 1.5rem;
+      
+      display: flex;
+      justify-content: space-around;
+
+      .box {
+        background-color: white;
+        border-radius: 10px;
+        width: 84px;
+        height: 59px;
+        color: #09214F;
+        text-align: center;
+        padding: .5rem;
+
+        p {
+          margin-bottom: .3rem;
+
+          &:nth-of-type(2) {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

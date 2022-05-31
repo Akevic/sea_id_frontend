@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { App } from './App'
 import { Component } from './components/Camera'
+import { Profile } from './components/Profile'
 import { Provider } from 'react-redux'
 import { store } from './store/store'
 import './styles/main.scss'
@@ -18,6 +19,7 @@ root.render(
         <Routes>
           <Route path='/' element={ <App /> } />
           <Route path='/camera' element={ <Component /> } />
+          <Route path='/profile' element={ <Profile /> } />
         </Routes>
       </BrowserRouter>
     </Provider>
