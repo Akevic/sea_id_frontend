@@ -142,7 +142,7 @@ export const Component = () => {
     // }))
     setTimeout(() => {
       navigate('/profile')
-    }, 1000)
+    }, 600)
   }
 
   return (
