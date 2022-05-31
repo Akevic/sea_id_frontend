@@ -11,9 +11,9 @@ const imageSlice = createSlice({
   name: 'image',
   initialState,
   reducers: {
-    addImage (state, action) {
+    addImage (state: any[], action: { payload: any } | undefined) {
       // console.log(action.payload)
-      state.push(...action.payload)
+      state.push(...action!.payload)
       console.log(state)
     }
   }
