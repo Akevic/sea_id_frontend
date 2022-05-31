@@ -47,7 +47,9 @@
         background: linear-gradient(180deg, #09214F 99.99%, rgba(58, 128, 216, 0) 100%);
         color: white;
       }
+    }
 
+    .regulation_btn {
       &:focus {
         background: linear-gradient(180deg, #09214F 99.99%, rgba(58, 128, 216, 0) 100%);
         color: white;
@@ -56,6 +58,11 @@
 
     .profile_btn {
       padding: .5rem 1rem;
+
+      &:focus {
+        background: linear-gradient(180deg, #09214F 99.99%, rgba(58, 128, 216, 0) 100%);
+        color: white;
+      }
     }
   }
 
